@@ -35,5 +35,5 @@ new_image = basic()(img)
 
 # For more info check the example jupyter notebook
 
-[Jupyter examples](../example.ipynb)
+[Jupyter examples](example.ipynb)
 
