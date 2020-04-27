@@ -36,6 +36,7 @@ img
 
 ```python
 new_image = basic()(img)
+new_image
 ```
 
 ![messi](./example_images/messi_changed.jpg "Messi")
