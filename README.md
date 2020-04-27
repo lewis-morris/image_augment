@@ -6,15 +6,9 @@ Can be used in a pytorch pipeline
 
 ## Setup
 
-Clone repository
+Use pip to install 
 
-`git clone 'https://github.com/lewis-morris/image_augment'`
-  
-Open directory
-
-`cd image_augment`
-
-
+[Find me on pypi](https://www.google.com)
 
 ## Basic Usage.
 
@@ -24,5 +18,18 @@ Noise - randomly adds noise to image
 
 Mirroring - randomly flips image on vertical and horizontal axis.
 
+Rotation - randomly rotates image
+
+```python
+from ImageAugment import basic
+from PIL import Image
+
+img = Image.open(./example_images/messi5.jpg)
+
+new_image = basic()(img)
+
+```
 
 # For more info check the example jupyter notebook
+
+[Jupyter examples](../example.ipynb)
