@@ -28,10 +28,17 @@ from ImageAugment import basic
 from PIL import Image
 
 img = Image.open(./example_images/messi5.jpg)
-
-new_image = basic()(img)
-
+img 
 ```
+
+![messi](./example_images/messi5.jpg "Messi")
+
+
+```python
+new_image = basic()(img)
+```
+
+![messi](./example_images/messi_changed.jpg "Messi")
 
 # For more info check the example jupyter notebook
 
