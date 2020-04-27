@@ -7,6 +7,14 @@ import cv2
 class Augmentation:
 
     def __init__(self, rotate_p=0.35, flip_p=0.35, cutout_p=0.35, add_noise_p=0.35):
+        """
+        Used to add variance to input layer of CNN to help models generalize better.
+
+        :param rotate_p: Probability of image being rotated
+        :param flip_p:  Probability of image being flipped
+        :param cutout_p:  Probability of image having random squares cutout
+        :param add_noise_p:  Probability of noise being added to image
+        """
         self.rotate_p = rotate_p
         self.flip_p = flip_p
         self.cutout_p = cutout_p
@@ -19,10 +27,10 @@ class Augmentation:
             numpy == True
             img = Image.fromarray(img)
 
-        img = self.rotate(self.rotate_p)(img)
-        img = self.flip(self.flip_p)(img)
-        img = self.cutout(self.cutout_p)(img)
-        img = self.noise(self.add_noise_p)(img)
+        img = self.rotate(self.rotate_p, img)
+        img = self.flip(self.flip_p, img)
+        img = self.cutout(self.cutout_p, img)
+        img = self.noise(self.add_noise_p, img)
 
         if numpy:
             return np.array(img)
