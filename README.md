@@ -8,7 +8,10 @@ Can be used in a pytorch pipeline
 
 Use pip to install 
 
-[Find me on pypi](https://www.google.com)
+`pip install image-augment`
+
+[pypi link ](https://www.google.com)
+
 
 ## Basic Usage.
 
@@ -33,3 +36,4 @@ new_image = basic()(img)
 # For more info check the example jupyter notebook
 
 [Jupyter examples](../example.ipynb)
+
