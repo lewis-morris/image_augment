@@ -10,18 +10,20 @@ Use pip to install
 
 `pip install image-augment`
 
-[pypi link ](https://www.google.com)
+[PyPI](https://pypi.org/project/image-augment/)
 
+## Features
 
-## Basic Usage.
-
-Cutout - bocking out random segments of the image - details on this technique can be found here. https://arxiv.org/pdf/1708.04552.pdf
+Cutout - blocking out random segments of the image - details on this technique can be found here. https://arxiv.org/pdf/1708.04552.pdf
 
 Noise - randomly adds noise to image 
 
 Mirroring - randomly flips image on vertical and horizontal axis.
 
 Rotation - randomly rotates image
+
+## Basic Usage.
+
 
 ```python
 from ImageAugment import basic
